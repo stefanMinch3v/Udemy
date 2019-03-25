@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"      
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"       
+    x:Class="XamarinTraining.ImageDemo"
+    xmlns:local="clr-namespace:XamarinTraining.MarkupExtensions; assembly=XamarinTraining">
+    <ContentPage.Content>
+        <!--<AbsoluteLayout>
+            <ActivityIndicator 
+                IsRunning="{Binding Source={x:Reference image}, Path=IsLoading}"
+                Color="Purple"
+                AbsoluteLayout.LayoutBounds="0.5, 0.5, 100, 100"
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Image 
+                x:Name="image"
+                Aspect="Fill"
+                AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                AbsoluteLayout.LayoutFlags="All"/>
+        </AbsoluteLayout>-->
+        <Image 
+            Source="{local:EmbeddedImage XamarinTraining.Images.pgr.jpg}"
+            x:Name="image"
+            Aspect="Fill"/>
+    </ContentPage.Content>
+</ContentPage>

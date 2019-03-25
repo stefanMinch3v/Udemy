@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinTraining.StackPage">
+    <ContentPage.Padding>
+        <OnPlatform x:DataType="Thickness" Default="20 0 0 0"></OnPlatform>
+    </ContentPage.Padding>
+    <StackLayout 
+        BackgroundColor="Yellow"
+        Orientation="Horizontal"
+        Padding="40"
+        Spacing="20"
+        VerticalOptions="Center"
+        HorizontalOptions="Center">
+        <StackLayout>
+            <Image Source="."/>
+            <Label Text="Label 1" />
+        </StackLayout>
+        <Label Text="Label 2" />
+        <Label Text="Label 3" />
+    </StackLayout>
+</ContentPage>

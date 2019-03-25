@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinTraining.GridExercise">
+    <ContentPage.BackgroundColor>
+        <OnPlatform 
+            x:DataType="Color"
+            Android="#354242"/>
+    </ContentPage.BackgroundColor>
+    <Grid Padding="40" RowSpacing="10" ColumnSpacing="10">
+        <Label Grid.Row="0" Grid.ColumnSpan="3" Text="1234" 
+                   TextColor="White" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" 
+                   FontSize="30"/>
+        <Button Grid.Row="1" Grid.Column="0" Text="1" 
+               BackgroundColor="#fff" 
+               TextColor="#28282c"
+               FontSize="20"
+               BorderRadius="30"/>
+        <Button Grid.Row="1" Grid.Column="1" Text="2" 
+                BackgroundColor="#fff" 
+                TextColor="#28282c"
+                FontSize="20"
+                BorderRadius="30"/>
+        <Button Grid.Row="1" Grid.Column="2" Text="3" 
+                BackgroundColor="#fff" 
+                TextColor="#28282c"
+                FontSize="20"
+                BorderRadius="30"/>
+        <Button Grid.Row="2" Grid.Column="0" Text="4" 
+                BackgroundColor="#fff" 
+                TextColor="#28282c"
+                FontSize="20"
+                BorderRadius="30"/>
+        <Button Grid.Row="2" Grid.Column="1" Text="5" 
+                BackgroundColor="#fff" 
+                TextColor="#28282c"
+                FontSize="20"
+                BorderRadius="30"/>
+        <Button Grid.Row="2" Grid.Column="2" Text="6" 
+                BackgroundColor="#fff" 
+                TextColor="#28282c"
+                FontSize="20"
+                BorderRadius="30"/>
+        <Button Grid.Row="3" Grid.Column="0" Text="7" 
+                BackgroundColor="#fff" 
+                TextColor="#28282c"
+                FontSize="20"
+                BorderRadius="30"/>
+        <Button Grid.Row="3" Grid.Column="1" Text="8" 
+                BackgroundColor="#fff"
+                TextColor="#28282c"
+                FontSize="20"
+                BorderRadius="30"/>
+        <Button Grid.Row="3" Grid.Column="2" Text="9" 
+                BackgroundColor="#fff" 
+                TextColor="#28282c"
+                FontSize="20"
+                BorderRadius="30"/>
+        <Button Grid.Row="4" Grid.Column="1" Text="0"
+                BackgroundColor="#fff" 
+                TextColor="#28282c"
+                FontSize="20"
+                BorderRadius="30"/>
+        <Button Grid.Row="5" Grid.ColumnSpan="3" Text="Dial"
+                BackgroundColor="#96ca2d"
+                BorderRadius="30"/>
+    </Grid>
+</ContentPage>

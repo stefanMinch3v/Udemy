@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinTraining.GreetPage">
+    <!--<ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>-->
+    <!--<Button Text="Click me"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Clicked="Button_Clicked">
+    </Button>-->
+
+    <!-- with stack layout we can stack multiple elements-->
+    <ContentPage.Padding>
+        <OnPlatform 
+            x:DataType="Thickness" 
+            iOS="0, 20, 0, 0"
+            Android="10, 20, 0, 0"/>
+    </ContentPage.Padding>
+    <StackLayout BindingContext="{x:Reference slider}" HorizontalOptions="Center">
+        <BoxView 
+            Color="Green"
+            Opacity="{Binding Value}"/>
+        <Label
+            Text="{Binding 
+                Value, 
+                StringFormat='Value is {0:F2}'}" 
+            Opacity="{Binding Value}"/>
+        <Slider x:Name="slider"/>
+        <!--<Slider ValueChanged="Slider_ValueChanged" x:Name="slider"/>-->
+    </StackLayout>
+</ContentPage>

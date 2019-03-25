@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinTraining.AbsoluteLayoutExercise">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <BoxView 
+                BackgroundColor="GreenYellow"
+                AbsoluteLayout.LayoutBounds="0, 0, 100, 133"
+                AbsoluteLayout.LayoutFlags="WidthProportional"/>
+            <StackLayout
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                AbsoluteLayout.LayoutBounds="0, 0, 1, 0.3"
+                AbsoluteLayout.LayoutFlags="All">
+                <Label 
+                    Text="$11.95"
+                    TextColor="#33353a"
+                    FontSize="60"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"/>
+                <Button 
+                    Text="Add $7.99 Credit"
+                    TextColor="White"
+                    BackgroundColor="#1695A3"
+                    BorderRadius="15"
+                    HeightRequest="35"
+                    FontSize="13"
+                    FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout
+                Padding="40, 0" 
+                Spacing="20"
+				AbsoluteLayout.LayoutBounds="0, 0.5, 1, 0.3" 
+                AbsoluteLayout.LayoutFlags="All">
+                <Label 
+                    Text="Why pay for credit?"
+                    FontSize="13"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"/>
+                <Label 
+                    Text="Because you can reach people who aren't on SkyApp by calling phone landline numbers, or spending SMS at low-cost rates"
+                    FontSize="10"
+                    HorizontalOptions="Center" 
+                    HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+<!--another solution-->
+<!--<ContentPage.Content>
+    <AbsoluteLayout>
+        <BoxView 
+                BackgroundColor="GreenYellow"
+                AbsoluteLayout.LayoutBounds="0, 0, 100, 133"
+                AbsoluteLayout.LayoutFlags="WidthProportional"/>
+        <Label 
+                Text="$11.95"
+                TextColor="#33353a"
+                FontSize="60"
+                FontAttributes="Bold"
+                AbsoluteLayout.LayoutBounds="0.5, 0"
+                AbsoluteLayout.LayoutFlags="XProportional"/>
+        <Button 
+                Text="Add $7.99 Credit"
+                TextColor="White"
+                BackgroundColor="#1695A3"
+                BorderRadius="15"
+                HeightRequest="35"
+                FontSize="13"
+                FontAttributes="Bold"
+                AbsoluteLayout.LayoutBounds="0.5, 0.22"
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <Label 
+                Text="Why pay for credit?"
+                FontSize="13"
+                FontAttributes="Bold"
+                AbsoluteLayout.LayoutBounds="0.5, 0.4"
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <Label 
+                Text="Because you can reach people who aren't on SkyApp by calling phone landline numbers, or spending SMS at low-cost rates"
+                FontSize="10"
+                HorizontalTextAlignment="Center"
+                AbsoluteLayout.LayoutBounds="0.5, 0.5"
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+    </AbsoluteLayout>
+</ContentPage.Content>-->
+
+<!--For the description, instead of setting the Text attribute, put the text between Label
+element’s tags:
+<Label>
+    Because	you	can	reach	people	who	aren’t	on
+SkyApp	by	calling	mobile	and	landline
+numbers,	or	spending	SMS,	at	low-cost	rates.
+</Label>
+This way, text will be rendered exactly as is (eg three lines here). Make sure each line
+starts at column 0 and there is no indentation.
+Set HorizontalTextAlignment property of the Label to “Center” and observe the result.--> 
