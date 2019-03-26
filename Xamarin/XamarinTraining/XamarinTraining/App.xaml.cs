@@ -11,7 +11,10 @@ namespace XamarinTraining
         {
             InitializeComponent();
 
-            MainPage = new ListSearchDemo();
+            MainPage = new NavigationPage(new NavPageOne())
+            {
+                BarBackgroundColor = Color.PaleVioletRed
+            };
         }
 
         protected override void OnStart()
