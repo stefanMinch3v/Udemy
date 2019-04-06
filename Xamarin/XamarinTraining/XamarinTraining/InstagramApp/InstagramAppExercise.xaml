@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamarinTraining.InstagramApp.InstagramAppExercise"
+    xmlns:local="clr-namespace:XamarinTraining.InstagramApp">
+    <local:ActivityPage Title="Activities" Icon="heart_s.png"/>
+    <local:MyProfile Title="My Profile" Icon="user_s.png"/>
+</TabbedPage>

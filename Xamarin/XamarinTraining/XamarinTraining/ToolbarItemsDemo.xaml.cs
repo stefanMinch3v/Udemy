@@ -10,17 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace XamarinTraining
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class NavPageOne : ContentPage
+	public partial class ToolbarItemsDemo : ContentPage
 	{
-		public NavPageOne ()
+		public ToolbarItemsDemo ()
 		{
 			InitializeComponent ();
 		}
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        private void ToolbarItem_Activated(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new NavPageTwo());
-            // await Navigation.PushModalAsync(new NavPageTwo()); push modal async method
+            DisplayAlert("Activated", "ToolbarItem activated", "Ok");
         }
     }
 }

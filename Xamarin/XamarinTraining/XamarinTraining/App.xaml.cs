@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinTraining.InstagramApp;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace XamarinTraining
@@ -11,10 +12,19 @@ namespace XamarinTraining
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new NavPageOne())
-            {
-                BarBackgroundColor = Color.PaleVioletRed
-            };
+            MainPage = new NavigationPage(new InstagramAppExercise());
+
+            //MainPage = new NavigationPage(new ToolbarItemsDemo());
+
+            //MainPage = new NavigationPage(new MasterPage())
+            //{
+            //    BarBackgroundColor = Color.PaleVioletRed
+            //};
+
+            //MainPage = new NavigationPage(new NavPageOne())
+            //{
+            //    BarBackgroundColor = Color.PaleVioletRed
+            //};
         }
 
         protected override void OnStart()

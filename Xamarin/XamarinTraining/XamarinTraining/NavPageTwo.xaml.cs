@@ -20,6 +20,13 @@ namespace XamarinTraining
         private async void Button_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
+            // await Navigation.PopModalAsync(); pop modal async method
         }
+
+        // optional disable the back button
+        //protected override bool OnBackButtonPressed()
+        //{
+        //    return true;
+        //}
     }
 }
