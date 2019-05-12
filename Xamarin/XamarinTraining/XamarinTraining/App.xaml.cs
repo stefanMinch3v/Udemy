@@ -1,4 +1,5 @@
 ﻿using System;
+using XamarinTraining.ContactBook;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XamarinTraining.InstagramApp;
@@ -12,7 +13,11 @@ namespace XamarinTraining
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new InstagramAppExercise());
+            MainPage = new NavigationPage(new ContactsPage());
+
+            //MainPage = new NavigationPage(new PickerAndNavigation.MainPage());
+
+            // MainPage = new NavigationPage(new InstagramAppExercise());
 
             //MainPage = new NavigationPage(new ToolbarItemsDemo());
 
